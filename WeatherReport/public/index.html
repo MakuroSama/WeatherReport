@@ -1,0 +1,37 @@
+<!-- Complete Project Details at: https://RandomNerdTutorials.com/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESP Firebase App</title>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+
+    <script>
+    // REPLACE WITH YOUR web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyA5UQLbdakG7d0u69E6V2L6e_0oKuN9LLY",
+        authDomain: "realtimeweatherreport.firebaseapp.com",
+        databaseURL: "https://realtimeweatherreport-default-rtdb.asia-southeast1.firebasedatabase.app",
+        projectId: "realtimeweatherreport",
+        storageBucket: "realtimeweatherreport.appspot.com",
+        messagingSenderId: "481303530869",
+        appId: "1:481303530869:web:04325ef0f4046d5cf7173c"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    var database = firebase.database();
+</script>
+<script src="app.js" defer></script>
+
+</head>
+<body>
+    <h1>ESP32 Firebase Web App Example</h1>
+    <p>Reading int: <span id="reading-int"></span></p>
+    <p>Reading float: <span id="reading-float"></span></p>
